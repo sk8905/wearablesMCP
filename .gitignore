@@ -1,0 +1,30 @@
+# --- Secrets & local state (NEVER commit) ---
+.env
+*.env
+!.env.example
+
+# Encrypted Whoop token, SQLite cache, Garmin session tokens
+.data/
+*.enc
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/

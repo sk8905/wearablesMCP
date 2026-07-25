@@ -1,0 +1,25 @@
+[project]
+name = "wearables-mcp"
+version = "0.1.0"
+description = "Private, local, read-only MCP server for Whoop and Garmin health data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "cryptography>=42.0.0",
+    "keyring>=25.0.0",
+    "garminconnect>=0.2.19",
+]
+
+[project.scripts]
+wearables-mcp = "wearables_mcp.server:main"
+wearables-mcp-authorize = "wearables_mcp.authorize_whoop:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["wearables_mcp"]
