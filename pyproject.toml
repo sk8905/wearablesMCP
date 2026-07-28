@@ -5,7 +5,7 @@ description = "Private, local, read-only MCP server for Whoop and Garmin health 
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "mcp>=1.2.0",
+    "mcp>=1.2.0,<2",
     "requests>=2.31.0",
     "python-dotenv>=1.0.0",
     "cryptography>=42.0.0",
